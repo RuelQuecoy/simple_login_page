@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+
+<style>
+
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+/* Background */
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background: linear-gradient(135deg,#0f172a,#1e3a8a,#020617);
+}
+
+/* Login Card */
+.login-container{
+width:350px;
+padding:40px;
+border-radius:15px;
+background: rgba(255,255,255,0.08);
+backdrop-filter: blur(10px);
+box-shadow:0 8px 30px rgba(0,0,0,0.5);
+text-align:center;
+}
+
+/* Title */
+.login-container h2{
+color:white;
+font-size:32px;
+margin-bottom:10px;
+}
+
+.underline{
+width:40px;
+height:3px;
+background:#ff4d6d;
+margin:10px auto 30px;
+border-radius:10px;
+}
+
+/* Input Fields */
+.input-box{
+margin-bottom:20px;
+}
+
+.input-box input{
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+background: rgba(255,255,255,0.15);
+color:white;
+font-size:15px;
+outline:none;
+}
+
+.input-box input::placeholder{
+color:#d1d5db;
+}
+
+/* Button */
+.login-btn{
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+background:#ff4d6d;
+color:white;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.login-btn:hover{
+background:#ff2e55;
+transform:scale(1.03);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="login-container">
+
+<h2>Login</h2>
+<div class="underline"></div>
+
+<form>
+
+<div class="input-box">
+<input type="text" placeholder="Username" required>
+</div>
+
+<div class="input-box">
+<input type="password" placeholder="Password" required>
+</div>
+
+<button class="login-btn">Login</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
